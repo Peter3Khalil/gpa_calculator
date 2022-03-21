@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+    <head>
+        <title>GPA calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="output">
+                <h3 id="term">GPA of term : <span id="result1"> 0</span></h3>
+                <h3 id="total">CGPA : <span id="result2"> 0</span></h3>
+                <h4 id="credit">Credit hours of term: <span id="result3"> 0</span></h4>
+                <h4 id="succeededHours1">Succeeded Hours : <span id="result4"> 0</span></h4>
+            </div>
+            
+            <div class="input">
+                <input id="succeededHours" type="number" placeholder="Succeeded Hours of previous terms">
+                <input id="preGpa" type="number" placeholder="Previous CGPA">
+            </div>
+            
+            <div class="table">
+                <table border="1" id="table">
+                    <tr>
+                        <th>subjects</th>
+                        <th>Grades</th>
+                        <th>credits</th>
+                    </tr>
+                </table>
+            </div>
+            
+            <div id="btns">
+                <button type="button" id="btn" onclick="test()">Calculate</button>
+                <button type="button" id="reset" onclick="reset()">reset</button>
+            </div>
+            
+        </div>
+        <script src="js.js"></script>
+    </body>
+
+</html>
